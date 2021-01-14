@@ -184,7 +184,9 @@ git config --global --edit
 
 ### F-ups
 
-When something does not go by the plan. **Proceed at your own risk.**
+When something does not go by the plan. 
+
+**⚠️ Proceed at your own risk. ⚠️**
 
 ##### Remove directory from git ONLY
 ```shell script
