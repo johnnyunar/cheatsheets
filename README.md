@@ -25,6 +25,7 @@
 * [About the Project](#about-the-project)
 * [Command line](#command-line)
 * [PostgreSQL](#postgresql)
+* [Conda & Pip](#conda--pip)
 * [Python](#python)
 * [Django](#django)
 * [Heroku](#heroku)
@@ -51,6 +52,7 @@ Linux
 netstat -vanp tcp | grep 8000
 ```
 
+<!-- PostgreSQL -->
 ## PostgreSQL
 MacOS
 ```shell script
@@ -61,8 +63,48 @@ Other
 pip install psycopg2
 ```
 
+<!-- Conda -->
+## Conda & Pip
+#### [Conda docs](https://docs.conda.io/en/latest/)
+
+##### Create a new environment named py35, install Python 3.5
+```shell script
+conda create --name py35 python=3.5
+```
+
+##### Activate the new environment to use it
+```shell script
+conda activate py35
+```
+
+##### Leave the active environment
+```shell script
+conda deactivate
+```
+
+##### Get a list of all my environments, active environment is shown with *
+```shell script
+conda env list
+```
+
+##### Install a new package
+Conda (fewer packages)
+```shell script
+conda install <package-name>
+```
+Pip
+```shell script
+pip install <package-name>
+```
+
+##### Create or update requirements.txt file
+```shell script
+pip freeze > requirements.txt
+```
+
 <!-- Python -->
 ## Python
+#### [Python docs](https://docs.python.org/)
 
 
 <!-- Django -->
