@@ -62,16 +62,16 @@ pip install psycopg2
 
 <!-- Django -->
 ## Django
-####[Django docs](https://docs.djangoproject.com/)
+#### [Django docs](https://docs.djangoproject.com/)
 
-#####Convert \\n to \<br/> in templates
+##### Convert \\n to \<br/> in templates
 ```html
 {{my_field.label|linebreaks}} 
 ```
 
 <!-- Heroku -->
 ## Heroku
-####[Heroku docs](https://devcenter.heroku.com/)
+#### [Heroku docs](https://devcenter.heroku.com/)
 
 ##### Copy database to a new app
 ```shell script
