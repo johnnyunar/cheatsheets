@@ -122,8 +122,8 @@ pip freeze > requirements.txt
 
 ##### Copy database to a new app
 ```shell script
-heroku pg:backups:capture --app sushi (sushi is name of source app)
-heroku pg:backups:restore sushi::b001 --app sushi-2 (b001 - name of backup, sushi-2 - dest. App)
+heroku pg:backups:capture --app sushi # sushi is name of source app
+heroku pg:backups:restore sushi::b001 --app sushi-2 # b001 - name of backup, sushi-2 - dest. App
 ```
 
 ##### Clone entire app
