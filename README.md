@@ -1,8 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="#">
-    <img src="" alt="Logo" width="150">
+  <a href="#table-of-contents">
+    <img src="https://raw.githubusercontent.com/johnunar/cheatsheets/master/images/command.png?token=AHRYNKKSZSV5FRU2LAJLW4DABGFEE" alt="Logo" width="150">
   </a>
 
   <h3 align="center">Cheatsheet</h3>
