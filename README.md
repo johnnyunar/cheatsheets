@@ -193,6 +193,14 @@ When something does not go by the plan.
 git rm -r --cached <directory>
 ```
 
+##### Reset a branch (force pull)
+**⚠️ This will rewrite your local files. ⚠️**
+```shell script
+git fetch --all # Fetch changes
+git checkout -b backup-<branch_name> # Backup your branch
+git reset --hard origin/<branch_name> # E.g. origin/master
+```
+
 <!-- ROADMAP -->
 ## Roadmap
 
