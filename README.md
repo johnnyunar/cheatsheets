@@ -23,7 +23,12 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-* [Terminal](#terminal)
+* [Command line](#command-line)
+* [PostgreSQL](#postgresql)
+* [Python](#python)
+* [Django](#django)
+* [Heroku](#heroku)
+* [Git](#git)
 * [Roadmap](#roadmap)
 * [Contact](#contact)
 
@@ -33,8 +38,8 @@
 
 Useful commands and tips all at one place. Created as a personal open-source project, feel free to collaborate!
 
-<!-- Terminal -->
-## Terminal
+<!-- Command line -->
+## Command line
 
 ##### Check what process is running on a port 8000
 MacOS
