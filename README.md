@@ -106,6 +106,7 @@ pip freeze > requirements.txt
 ## Python
 ### [Python docs](https://docs.python.org/)
 
+### [Separate Python Cheatsheet]()
 #### Add shebang to the top of your script be able to run it like ./script.py
 ```python
 #!/usr/bin/env python
