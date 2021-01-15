@@ -106,6 +106,10 @@ pip freeze > requirements.txt
 ## Python
 ### [Python docs](https://docs.python.org/)
 
+#### Add shebang to be able to run your script like ./script.py
+```python
+#!/usr/bin/env python
+``` 
 
 <!-- Django -->
 ## Django
