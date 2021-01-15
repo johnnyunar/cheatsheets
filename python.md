@@ -23,7 +23,8 @@
 ## Table of Contents
 
 * [Basics](#basics)
-* [Lists](#lists)
+    * [Lists](#lists)
+    * [Tuples](#tuples)
 * [Roadmap](#roadmap)
 * [Contact](#contact)
 
@@ -288,7 +289,7 @@ True
 'Bob'
 ```
 
-## Tuples
+### Tuples
 ```python
 >>> eggs = ('hello', 42, 0.5)
 >>> eggs[0]
