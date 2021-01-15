@@ -110,7 +110,16 @@ pip freeze > requirements.txt
 <!-- Django -->
 ## Django
 ### [Django docs](https://docs.djangoproject.com/)
+### [Project setup](https://www.unar.dev/blog/1/django-setup-101/)
 
+#### Return a properly formatted JSONResponse
+```python
+return HttpResponse(cart.cart.items(), content_type="application/json")
+```
+or
+```python
+return JsonResponse({"response": "success"})
+```
 #### Convert \\n to \<br/> in templates
 ```html
 {{my_field.label|linebreaks}} 
@@ -203,6 +212,10 @@ git reset --hard origin/<branch_name> # E.g. origin/master
 
 <!-- ROADMAP -->
 ## Roadmap
+* Add more code snippets
+* Add more tools
+* Make a separate file for each of the cheatsheets
+* Generate a more human-friendly cheatsheet (.pdf most likely)
 
 <!-- CONTACT -->
 ## Contact
