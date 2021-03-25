@@ -21,7 +21,7 @@
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
-
+* [Useful helpers](#useful-helpers)
 * [Basics](#basics)
     * [Lists](#lists)
     * [Tuples](#tuples)
@@ -34,6 +34,23 @@ Fire up your python console and do this first.
 ```python
 import this
 ```
+<!-- Useful helpers -->
+## Useful Helpers
+There are some packages that will make your life easier
+### [Pylint](https://www.pylint.org/)
+Pylint is a tool that checks for errors in Python code, 
+tries to enforce a coding standard and looks for code smells. 
+It can also look for certain type errors, it can recommend suggestions about how particular blocks can be
+refactored and can offer you details about the code's complexity.
+### [Black](https://pypi.org/project/black/)
+Black makes code review faster by producing the smallest diffs possible.
+Blackened code looks the same regardless of the project you’re reading.
+Formatting becomes transparent after a while and you can focus on the content instead.
+### [iSort](https://pypi.org/project/isort/)
+isort is a Python utility / library to sort imports alphabetically, and automatically separated
+into sections and by type. It provides a command line utility,
+Python library and plugins for various editors to quickly sort all your imports.
+It requires Python 3.6+ to run but supports formatting Python 2 code too.
 
 <!-- Basics -->
 ## Basics
