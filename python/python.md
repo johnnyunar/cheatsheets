@@ -36,7 +36,8 @@ import this
 ```
 <!-- Useful helpers -->
 ## Useful Helpers
-There are some packages that will make your life easier
+There are some packages that will make your life easier. If you are using PyCharm, you can use my [watchers.xml](https://github.com/johnunar/cheatsheets/blob/master/python/watchers.xml) file
+to automatically import File Watchers that improve your code on each save.
 ### [Pylint](https://www.pylint.org/)
 Pylint is a tool that checks for errors in Python code, 
 tries to enforce a coding standard and looks for code smells. 
