@@ -600,6 +600,17 @@ pip install Django
 pip freeze > requirements.txt
 ```
 
+## Django Setup
+Generate a new Django project:
+```shell
+django-admin startproject projectname
+```
+
+Start a new app inside the Django project:
+```shell
+./manage.py startapp app_name
+```
+
 ## Development server
 **Start the server (default port 8000):**
 ```shell
