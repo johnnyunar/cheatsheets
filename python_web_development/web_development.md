@@ -241,8 +241,8 @@ lowercase attributes, quote values
         <option selected="selected" value="male">Male</option>
         <option value="female">Female</option>
     </select><br/>
-    <input checked="checked" name="newsletter" type="radio" value="daily"/> Daily <input name="newsletter" type="radio"
-                                                                                         value="weekly"/> Weekly<br/>
+    <input checked="checked" name="newsletter" type="radio" value="daily"/>Daily
+    <input name="newsletter" type="radio" value="weekly"/>Weekly<br/>
     <textarea cols="20" name="comments" rows="5">Comment</textarea><br/>
     <label><input name="terms" type="checkbox" value="tandc"/>Accept terms</label> <br/>
     <input type="submit" value="Submit"/>
