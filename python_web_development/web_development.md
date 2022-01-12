@@ -578,30 +578,30 @@ Install Miniconda: (from https://docs.conda.io/en/latest/miniconda.html)
 sh Miniconda3-latest-YOURSYSTEM-x86_64.sh
 ```
 
-Create a virtual environment:
+**Create a virtual environment:**
 
 ```shell
 conda create --name environment-name-here python=3.9
 ```
 
-Switch to your environment:
+**Switch to your environment:**
 
 ```shell
 conda activate environment-name-here
 ```
 
-Install a package from [PyPi](https://pypi.org/):
+**Install a package from [PyPi](https://pypi.org/):**
 ```shell
 pip install Django
 ```
 
-Generate a requirements.txt file:
+**Generate a requirements.txt file:**
 ```shell
 pip freeze > requirements.txt
 ```
 
 ## Development server
-Start the server (default port 8000):
+**Start the server (default port 8000):**
 ```shell
 ./manage.py runserver
 ```
