@@ -570,6 +570,7 @@ x = 1;          // Throws an error because variable is not declared
 # Django
 
 ## Conda
+
 Everything you do in Python, do in the virtual environment!
 
 Install Miniconda: (from https://docs.conda.io/en/latest/miniconda.html)
@@ -591,36 +592,66 @@ conda activate environment-name-here
 ```
 
 **Install a package from [PyPi](https://pypi.org/):**
+
 ```shell
 pip install Django
 ```
 
 **Generate a requirements.txt file:**
+
 ```shell
 pip freeze > requirements.txt
 ```
 
 ## Django Setup
+
 Generate a new Django project:
+
 ```shell
 django-admin startproject projectname
 ```
 
 Start a new app inside the Django project:
+
 ```shell
 ./manage.py startapp app_name
 ```
 
 ## Development server
+
 **Start the server (default port 8000):**
+
 ```shell
 ./manage.py runserver
 ```
 
 Start the server on port 8888:
+
 ```shell
 ./manage.py runserver 8888
 ```
+
+## Migrations
+
+Migrations are an essential part of Django development. They reflect our Model changes in the database.
+
+### Make migrations
+
+This will generate the migration files and show you the changes:
+
+```shell
+./manage.py makemigrations
+```
+
+If you are happy with it, you can **run the migrations**:
+
+### Migrate
+
+```shell
+./manage.py migrate
+```
+
+This performs the queries needed to sync the database with our models. No SQL needed!
 <!-- ROADMAP -->
 
 ## Roadmap
