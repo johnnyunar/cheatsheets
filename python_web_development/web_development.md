@@ -604,6 +604,8 @@ Start a new app inside the Django project:
 ./manage.py startapp app_name
 ```
 
+**Don't forget to register your new app in *settings.py*!**
+
 ## Development server
 
 **Start the server (default port 8000):**
@@ -640,6 +642,70 @@ If you are happy with it, you can **run the migrations**:
 
 This performs the queries needed to sync the database with our models. No SQL needed!
 <!-- ROADMAP -->
+
+### Models
+
+Models are kept inside the *models.py* file inside each app's folder.
+
+These two models represent a basic setup for a polls app:
+
+```python
+import datetime
+
+from django.db import models
+from django.utils import timezone
+
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField('Date Published')
+
+    def __str__(self):
+        return self.question_text
+
+    def was_published_recently(self):
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.pub_date <= now
+
+    was_published_recently.admin_order_field = 'pub_date'
+    was_published_recently.boolean = True
+    was_published_recently.short_description = 'Published recently?'
+
+
+class Choice(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    choice_text = models.CharField(max_length=200)
+    votes = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.choice_text
+```
+
+### Admin
+
+This is how you easily register your model in the Django admin:
+
+```python
+admin.site.register(Question)
+```
+
+You can also introduce a ModelAdmin if you need modifications:
+
+```python
+class QuestionAdmin(admin.ModelAdmin):
+    list_display = ["question_text", "pub_date"]
+
+
+admin.site.register(Question, QuestionAdmin)
+```
+
+That can be simplified using a **decorator**:
+
+```python
+@admin.register(Question)
+class QuestionAdmin(admin.ModelAdmin):
+    list_display = ["question_text", "pub_date"]
+```
 
 ## Roadmap
 
