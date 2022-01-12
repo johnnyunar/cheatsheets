@@ -283,22 +283,9 @@ lowercase attributes, quote values
 
 ### Include External CSS File
 
-```css
-<
-link rel
+```html
 
-=
-"stylesheet"
-type
-
-=
-"text/css"
-href
-
-=
-"css/style.css"
-/
->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 ```
 
 ### Tag
